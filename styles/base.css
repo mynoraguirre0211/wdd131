@@ -52,6 +52,8 @@ h1 {
     display: flex;
     justify-content: center;
     color: rgba(44, 54, 51);
+    font-size: 50px;
+    font-weight: 400;
 }
 
 footer {
@@ -65,6 +67,8 @@ footer {
 
 footer p {
     text-align: center;
+    padding: 5px;
+    font-size: larger;
 }
 
 /* Classes */
@@ -138,6 +142,7 @@ footer p {
     grid-row: 1 / 2;
     justify-self: center;
     padding: 10px;
+    font-size: xx-large;
     border-bottom: 1px solid rgb(0, 0, 0, 0.3);
     width: 800px;
 }
