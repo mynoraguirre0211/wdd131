@@ -1,0 +1,52 @@
+@media (min-width: 850px) {
+
+    /*header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(31, 31, 85);
+        padding: 1rem 2rem;
+    }
+
+    .album {
+        color: white;
+        font-weight: 800;
+        font-size: xx-large;
+    }*/
+
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+        font-weight: 800;
+        font-size: xx-large;
+    }
+
+    .stuff {
+        margin: 1rem auto;
+    }
+}
