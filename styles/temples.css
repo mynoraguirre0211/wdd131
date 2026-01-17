@@ -5,6 +5,11 @@
     font-family: "Roboto", sans-serif;
 }
 
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -35,6 +40,14 @@ h2 {
     margin: 1rem;
 }
 
+footer {
+    text-align: center;
+    font-size: x-large;
+    padding: 1rem;
+    background-color: rgb(31, 31, 85);
+    color: white;
+    margin-top: 2rem;
+}
 
 /* small navigation */
 
@@ -78,6 +91,13 @@ h2 {
     background-color: #bbb;
     color: #333;
     font-weight: 700;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    place-items: center;
 }
 
 /* when is displayed */
