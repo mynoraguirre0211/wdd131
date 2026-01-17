@@ -20,6 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(31, 31, 85);
+    color: white;
     padding: 2rem 2rem;
 }
 
@@ -34,7 +35,6 @@ h1 {
     width: 100%;
     text-align: center;
     font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
     margin-left: 1rem;
     padding: 20px;
     font-size: xx-large;
@@ -77,8 +77,11 @@ footer {
     content: "❌";
 }
 
-.navigation {
+nav {
     display: flex;
+}
+
+.navigation {
     flex-direction: column;
     justify-content: space-evenly;
     list-style: none;
