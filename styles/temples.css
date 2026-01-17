@@ -6,7 +6,7 @@
 }
 
 main {
-    max-width: 1500px;
+    max-width: 1000px;
     justify-content: center;
     margin: 0 auto;
     display: grid;
@@ -111,8 +111,8 @@ figure {
 }
 
 img {
-    width: 500px;
-    height: 400px;
+    width: 300px;
+    height: 200px;
     display: block;
 
 }
@@ -145,5 +145,4 @@ figcaption {
 
 .active::before {
     content: "👀";
-    /* just a wayfinding symbol for the user */
 }
