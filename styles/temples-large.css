@@ -1,4 +1,4 @@
-@media (min-width: 600px) {
+@media (min-width: 500px) {
 
     main {
         grid-template-columns: repeat(2, 1fr);
@@ -35,13 +35,9 @@
         font-weight: 800;
         font-size: xx-large;
     }
-
-    .stuff {
-        margin: 1rem auto;
-    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
 
     main {
         grid-template-columns: repeat(3, 1fr);

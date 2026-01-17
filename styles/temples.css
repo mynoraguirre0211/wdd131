@@ -6,11 +6,13 @@
 }
 
 main {
-    max-width: 800px;
+    max-width: 1500px;
+    justify-content: center;
     margin: 0 auto;
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 10px;
 }
 
 header {
@@ -29,6 +31,7 @@ header {
 
 h1 {
     grid-column: 1 / -1;
+    width: 100%;
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
@@ -100,6 +103,7 @@ footer {
 figure {
     display: flex;
     flex-direction: column;
+    justify-self: center;
     align-items: center;
     background: #fdf6e3;
     border: 1px solid #ccc;
@@ -107,9 +111,10 @@ figure {
 }
 
 img {
-    width: 100%;
-    height: 200px;
+    width: 500px;
+    height: 400px;
     display: block;
+
 }
 
 figcaption {
@@ -139,6 +144,6 @@ figcaption {
 }
 
 .active::before {
-    content: "☝️";
+    content: "👀";
     /* just a wayfinding symbol for the user */
 }
