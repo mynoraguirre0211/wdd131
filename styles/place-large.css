@@ -1,0 +1,45 @@
+@media screen and (min-width: 1000px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .hero img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        margin-top: 30px solid rgb(19, 94, 15);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .card {
+        background-color: rgb(250, 243, 235, 0.8);
+        padding: 20px;
+        border-radius: 5px;
+        position: absolute;
+    }
+
+    .card1 {
+        top: 80px;
+        left: 10px;
+        width: 300px;
+    }
+
+    .card2 {
+        top: 80px;
+        right: 10px;
+        width: 300px;
+    }
+
+    .card h2 {
+        background-color: #2e7d32;
+        color: white;
+        padding: 5px 10px;
+        margin: -15px -15px 10px -15px;
+    }
+}

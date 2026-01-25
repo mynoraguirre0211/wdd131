@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 | Website of the country where I live</title>
+    <meta name="author" content="Mynor Aguirre" <meta name="description"
+        content="Website with responsive images, presenting my country.">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Guatemala</h1>
+    </header>
+    <main>
+        <picture class="hero">
+            <source srcset="images/guatemala-city-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/guatemala-city-small.jpg" media="(min-width: 500px)">
+            <img src="images/guatemala-city-small.jpg" alt="Guatemala city" width=500px height="300px">
+        </picture>
+        <div class="card">
+            <dl class="card1">
+                <h2>Data</h2>
+                <div class="data-row">
+                    <dt>Area:</dt>
+                    <dd>108,889 km²</dd>
+                </div>
+                <div class="data-row">
+                    <dt>Population:</dt>
+                    <dd>17.2 million (2023)</dd>
+                </div>
+                <div class="data-row">
+                    <dt>Capital:</dt>
+                    <dd>Guatemala City</dd>
+                </div>
+                <div class="data-row">
+                    <dt>Official Language:</dt>
+                    <dd>Spanish</dd>
+                </div>
+                <div class="data-row">
+                    <dt>Currency:</dt>
+                    <dd>Guatemalan Quetzal (GTQ)</dd>
+                </div>
+                <div class="data-row">
+                    <dt>Time Zone:</dt>
+                    <dd>Central Standard Time (CST) UTC-6</dd>
+                </div>
+                <div class="data-row">
+                    <dt>Calling Code:</dt>
+                    <dd>+502</dd>
+                </div>
+                <div class="data-row">
+                    <dt>Internet TLD:</dt>
+                    <dd>.gt</dd>
+                </div>
+            </dl>
+        </div>
+        <div class="card">
+            <dl class="card2">
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="Weather Icon" width="100" height="100">
+                <div class="data-row">
+                    <dt>Temperature:</dt>
+                    <dd>22°C (72°F)</dd>
+                </div>
+                <div class="data-row">
+                    <dt>Conditions:</dt>
+                    <dd>partly Cloudy</dd>
+                </div>
+                <div class="data-row">
+                    <dt>Wind:</dt>
+                    <dd>5 km/h</dd>
+                </div>
+                <div class="data-row">
+                    <dt>Wind Chill:</dt>
+                    <dd> 9.8 C</dd>
+                </div>
+            </dl>
+        </div>
+    </main>
+    <footer>
+        <p> © <span id="currentyear"></span> 🎶 Mynor Aguirre 🎶 Guatemala, Guatemala</p>
+        <p id="lastModified" class="highlight"></p>
+    </footer>
+</body>
+
+</html>
