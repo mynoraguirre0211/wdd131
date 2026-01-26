@@ -26,10 +26,11 @@
         background-color: var(--background-color2);
         top: 80px;
         left: 80px;
-        width: 550px;
-        height: 470px;
+        width: 500px;
+        height: 700px;
         padding: 10px;
-        font-size: x-large;
+        font-size: xx-large;
+        padding: 10px;
     }
 
     .card2 {
@@ -37,9 +38,9 @@
         background-color: var(--background-color2);
         bottom: 90px;
         right: 90px;
-        width: 400px;
+        width: 450px;
         padding: 10px;
-        font-size: x-large;
+        font-size: xx-large;
     }
 
     .card1 h2,
