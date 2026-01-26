@@ -1,3 +1,10 @@
+:root {
+    --backgroung-color1: rgb(24 82 197);
+    --background-color2: rgb(250, 243, 235, 0.8);
+    --background-color3: rgb(19, 94, 15);
+    --text-color: rgb(255, 255, 255);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,24 +13,17 @@
 
 header,
 footer {
-    background-color: #164ebf;
-    color: white;
+    background-color: var(--backgroung-color1);
+    color: var(--text-color);
     text-align: center;
     padding: 1em 0;
     font-size: x-large;
     font-weight: bold;
 }
 
-main {
-    display: grid;
-    gap: 10px;
-    justify-items: center;
-}
-
 picture img {
     width: 100%;
     height: 100%;
-    margin: 0 0 10px 0;
     border-bottom: 10px solid rgb(19, 94, 15);
     border-top: 10px solid rgb(19, 94, 15);
 }
@@ -33,11 +33,6 @@ h2 {
     width: 100%;
     padding: 10px;
     text-align: center;
-}
-
-.card {
-    text-align: center;
-    margin: 10px;
 }
 
 .data-row {
@@ -55,4 +50,21 @@ dt {
 dd {
     text-align: left;
     font-weight: 300;
+}
+
+.card2 h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.card2 img {
+    width: 80px;
+    height: 80px;
 }

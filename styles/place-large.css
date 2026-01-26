@@ -1,9 +1,13 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
 
     body {
         margin: 0;
         padding: 0;
         overflow-x: hidden;
+    }
+
+    main {
+        position: relative;
     }
 
     .hero img {
@@ -13,33 +17,52 @@
         object-position: center;
         display: block;
         margin-top: 30px solid rgb(19, 94, 15);
+        margin-bottom: 30px solid rgb(19, 94, 15);
         overflow: hidden;
-        position: relative;
-    }
-
-    .card {
-        background-color: rgb(250, 243, 235, 0.8);
-        padding: 20px;
-        border-radius: 5px;
-        position: absolute;
     }
 
     .card1 {
+        position: absolute;
+        background-color: var(--background-color2);
         top: 80px;
-        left: 10px;
-        width: 300px;
+        left: 80px;
+        width: 550px;
+        height: 470px;
+        padding: 10px;
+        font-size: x-large;
     }
 
     .card2 {
-        top: 80px;
-        right: 10px;
-        width: 300px;
+        position: absolute;
+        background-color: var(--background-color2);
+        bottom: 90px;
+        right: 90px;
+        width: 400px;
+        padding: 10px;
+        font-size: x-large;
     }
 
-    .card h2 {
-        background-color: #2e7d32;
-        color: white;
-        padding: 5px 10px;
-        margin: -15px -15px 10px -15px;
+    .card1 h2,
+    .card2 h2 {
+        background-color: var(--background-color3);
+        color: var(--text-color);
+        padding: 15px 20px;
+        margin: 20px -20px 10px -20px;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.5em;
+        justify-content: space-between;
+    }
+
+    .card2 h2::after {
+        content: " ⛅";
+        justify-self: end;
+        font-size: 3rem;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .card2 img {
+        display: none;
     }
 }
