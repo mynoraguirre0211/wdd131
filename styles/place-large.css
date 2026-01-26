@@ -10,6 +10,10 @@
         position: relative;
     }
 
+    h1 {
+        font-size: 100px;
+    }
+
     .hero img {
         width: 100vw;
         height: 100vh;
@@ -48,11 +52,12 @@
         background-color: var(--background-color3);
         color: var(--text-color);
         padding: 15px 20px;
-        margin: 20px -20px 10px -20px;
+        margin: 20px -20px;
         display: flex;
         flex-direction: row;
         font-size: 1.5em;
         justify-content: space-between;
+
     }
 
     .card2 h2::after {

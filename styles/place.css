@@ -15,10 +15,11 @@ header,
 footer {
     background-color: var(--backgroung-color1);
     color: var(--text-color);
+    font-family: "Allan", serif;
     text-align: center;
-    padding: 1em 0;
-    font-size: x-large;
-    font-weight: bold;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 100;
 }
 
 picture img {
@@ -33,6 +34,8 @@ h2 {
     width: 100%;
     padding: 10px;
     text-align: center;
+    font-family: "Allan", serif;
+    font-size: 40px;
 }
 
 .data-row {
@@ -45,11 +48,13 @@ h2 {
 dt {
     text-align: right;
     font-weight: 500;
+    font-family: "Allan", serif;
 }
 
 dd {
     text-align: left;
     font-weight: 300;
+    font-family: "Farsan", "cursive";
 }
 
 .card2 h2 {
