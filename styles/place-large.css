@@ -21,9 +21,10 @@
         object-fit: cover;
         object-position: center;
         display: block;
-        margin-top: 30px solid rgb(19, 94, 15);
-        margin-bottom: 30px solid rgb(19, 94, 15);
+        margin-top: 30px rgb(19, 94, 15);
+        margin-bottom: 30px rgb(19, 94, 15);
         overflow: hidden;
+        margin: 0;
     }
 
     .card1 {
