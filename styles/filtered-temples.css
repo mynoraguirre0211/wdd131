@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(31, 31, 85);
+    color: rgb(255, 255, 255);
+    padding: 2rem 2rem;
+}
+
+.album {
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: xx-large;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    width: 100%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin-left: 1rem;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+h2,
+h3 {
+    font-size: 1.2rem;
+    color: rgb(31, 31, 85);
+    text-align: left;
+    margin: 1rem;
+}
+
+footer {
+    text-align: center;
+    font-size: x-large;
+    padding: 1rem;
+    background-color: rgb(31, 31, 85);
+    color: rgb(255, 255, 255);
+    margin-top: 2rem;
+}
+
+/* small navigation */
+
+#menu {
+    font-size: xx-large;
+    border: 0;
+    background: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+nav {
+    display: flex;
+}
+
+.navigation {
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: rgb(31, 31, 85);
+    color: rgb(255, 255, 255);
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navigation a:hover {
+    background-color: rgb(187 187 187);
+    color: rgb(51 51 51);
+    font-weight: 700;
+}
+
+img {
+    width: 275px;
+    height: 200px;
+    display: block;
+    box-shadow: 0.1rem 0.1rem 2rem rgba(0, 0, 0, 0.7);
+    margin: 10px;
+}
+
+/* when is displayed */
+
+.open a {
+    display: block;
+}
+
+.navigation.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+#menu.open {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 10001;
+}
+
+.active::before {
+    content: "👀";
+}
+
+.temple-cards {
+    max-width: 1000px;
+    justify-content: center;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 10px;
+}
+
+.temple-cards section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(253 246 227);
+    border: 1px solid rgb(204 204 204);
+    margin: 10px;
+    width: 350px;
+}

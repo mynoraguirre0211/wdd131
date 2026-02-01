@@ -1,0 +1,44 @@
+@media (min-width: 500px) {
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+        font-weight: 800;
+        font-size: xx-large;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .temple-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
