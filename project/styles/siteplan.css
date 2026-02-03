@@ -51,7 +51,6 @@ h2 {
 p {
     margin: 10px 10px;
     font-size: 1.5em;
-    color: var(--text-color);
 }
 
 footer {
@@ -94,6 +93,15 @@ footer {
     grid-column: 2 / 3;
 }
 
+.sitename p,
+.sitepurpose p,
+.scenarios p,
+.colorschema p,
+.typography p,
+.wireframes p {
+    color: var(--text-color);
+}
+
 .sitepurpose,
 .scenarios {
     display: grid;
@@ -101,7 +109,12 @@ footer {
     grid-template-rows: auto 1fr;
     align-items: center;
     border: 2px solid var(--secondary-color);
+    padding: 10px;
     margin: 5px;
+}
+
+.scenarios {
+    font-size: 20px;
 }
 
 .questions {
