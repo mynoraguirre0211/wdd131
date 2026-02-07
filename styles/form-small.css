@@ -3,3 +3,145 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --primary-color: rgb(0, 0, 0, 0.5);
+    --secondary-color: rgb(220 220 225);
+    --third-color: rgb(38 38 176);
+    --background-color: rgb(31 37 77);
+    --text-color: rgb(255 255 255);
+    --font-headers: "Shadows Into Light Two", cursive;
+    --font-text: "Truculenta", sans-serif;
+    --font-extra: "Give Your Glory", serif;
+}
+
+body {
+    max-width: 400px;
+    justify-self: center;
+}
+
+main {
+    border: 1px solid var(--primary-color);
+    margin: 20px auto;
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+header,
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+    justify-items: center;
+    width: 100%;
+}
+
+form {
+    display: block;
+    padding: 0 20px;
+}
+
+fieldset {
+    border: none;
+    margin: 15px 0;
+}
+
+legend {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+input {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+select {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Classes */
+
+.stars {
+    display: flex;
+    flex-direction: row;
+}
+
+.stars label {
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+    margin: 0 auto;
+    height: auto;
+}
+
+.stars input[type="radio"] {
+    justify-self: center;
+    border: 2px solid var(--secondary-color);
+}
+
+.features label {
+    display: flex;
+    flex-direction: row;
+}
+
+.features input[type="checkbox"] {
+    margin-right: .5em;
+}
+
+.optional-text {
+    color: var(--third-color);
+    font-weight: normal;
+}
+
+input[type="submit"] {
+    background-color: rgb(146, 32, 32);
+    color: #fff;
+    padding: .8rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 90%;
+    max-width: 400px;
+    margin: 1rem 5% 1rem 5%;
+}
+
+/* ID´s */
+
+#product,
+#dateinstall,
+#fname {
+    width: 100%;
+    max-width: 400px;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+#dateinstall {
+    padding: 10px;
+}
+
+#review {
+    width: 100%;
+    max-width: 400px;
+    height: 80px;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+}
