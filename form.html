@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1 WDD131</title>
+    <meta name="description" content="This is a form for WDD131 class.">
+    <meta name="author" content="Mynor Aguirre">
+    <link rel="stylesheet" href="styles/form-small.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <select name="product" id="product" required>Product Name
+                <option value="" disabled selected>Choose a Product...</option>
+                <option value="ProductA">Product A</option>
+                <option value="ProductB">Product B</option>
+                <option value="ProductC">Product C</option>
+            </select>
+
+            <div>Overal Rating</div>
+            <label>&star;<input type="radio" id="fivestars" name="fivestars" required></label>
+            <label>&star;&star;<input type="radio" id="fivestars" name="fivestars" required></label>
+            <label>&star;&star;&star;<input type="radio" id="fivestars" name="fivestars" required></label>
+            <label>&star;&star;&star;&star;<input type="radio" id="fivestars" name="fivestars" required></label>
+            <label>&star;&star;&star;&star;&star;<input type="radio" id="fivestars" name="fivestars" required></label>
+
+            <label>Date of Installation<input type="date" id="dateinstall" name="dateinstall"></label>
+
+            <div>Which feature did you find useful in the product? (Check all that apply)</div>
+            <label>Durability<input type="checkbox" id="feature" name="feature" value="Durability"></label>
+            <label>Ease of Use<input type="checkbox" id="feature1" name="feature1" value="Ease of Use"></label>
+            <label>Performance<input type="checkbox" id="feature2" name="feature2" value="Performance"></label>
+            <label>Design<input type="checkbox" id="feature3" name="feature3" value="Design"></label>
+
+            <label>Written Review (Optional)<input type="textarea" id="review" name="review" optional></label>
+
+            <label>User Name (Optional)<input type="text" id="fname" name="fname" optional></label>
+
+            <input type="submit" value="Send my review">
+        </form>
+    </main>
+    <footer>
+        <p> © <span id="currentyear"></span> 🎶 Mynor Aguirre 🎶 Guatemala, Guatemala</p>
+        <p id="lastModified" class="highlight"></p>
+    </footer>
+</body>
+
+</html>
