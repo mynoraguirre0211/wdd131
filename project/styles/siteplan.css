@@ -169,7 +169,7 @@ footer {
     grid-column: 1 /2;
     grid-row: 3 /4;
     justify-self: center;
-    width: 275px;
+    width: 250px;
     height: 550px;
 }
 
@@ -177,6 +177,7 @@ footer {
     grid-column: 2 /3;
     grid-row: 3 /4;
     justify-self: center;
-    width: 475px;
-    height: 700px;
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
 }
