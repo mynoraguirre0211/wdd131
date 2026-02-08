@@ -27,6 +27,11 @@ main {
     color: black;
 }
 
+h1 {
+    font-family: "DM Serif Text", serif;
+    font-weight: 200;
+}
+
 header,
 footer {
     background-color: var(--background-color);
@@ -49,18 +54,21 @@ fieldset {
 legend {
     margin-top: 10px;
     font-size: 1.2em;
+    font-family: "Tinos", serif;
 }
 
 label {
     display: block;
     margin: 10px 0;
     font-size: 1.2em;
+    font-family: "Tinos", serif;
 }
 
 input {
     display: block;
     width: 100%;
     max-width: 400px;
+    font-family: "Yrsa", serif;
 }
 
 input[type="checkbox"] {
@@ -115,7 +123,7 @@ input[type="submit"] {
     padding: .8rem;
     border: none;
     border-radius: 50px;
-    font-size: 16px;
+    font-size: 23px;
     cursor: pointer;
     width: 90%;
     max-width: 400px;
@@ -144,4 +152,49 @@ input[type="submit"] {
     height: 80px;
     border-radius: 3px;
     border: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+input[type="textarea"],
+input[type="text"] {
+    padding: 0 10px;
+}
+
+/* review */
+
+.container {
+    padding: 20px;
+    align-items: center;
+    justify-self: center;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    height: 200px;
+}
+
+.container h1 {
+    justify-self: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container p {
+    padding: 2.5px;
+    justify-self: center;
+}
+
+.back-form {
+    background-color: rgb(146, 32, 32);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px;
+    display: block;
+    justify-self: center;
+    text-decoration: none;
+}
+
+.back-form:hover {
+    background: #1f7137;
 }

@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="styles/form-small.css">
     <link rel="stylesheet" href="styles/form-large.css">
     <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -17,14 +22,12 @@
         <h1>Product Review</h1>
     </header>
     <main>
-        <form method="get" action="review.html">
+        <form method="get" action="review.html" autocomplete="off">
             <fieldset>
                 <legend>Product Information</legend>
                 <select name="product" id="product" required>
                     <option value="" disabled selected>Choose a Product...</option>
-                    <option value="ProductA">Product A</option>
-                    <option value="ProductB">Product B</option>
-                    <option value="ProductC">Product C</option>
+                    <!-- To insert values -->
                 </select>
             </fieldset>
 
@@ -48,12 +51,13 @@
                 <label><input type="checkbox" id="feature3" name="feature3" value="Design">Design</label>
             </fieldset>
 
-            <label>Written Review <span class="optional-text">(Optional)</span><input type="textarea" id="review" name="review"
+            <label>Written Review <span class="optional-text">(Optional)</span><input type="textarea" id="review"
+                    name="review" optional></label>
+
+            <label>User Name <span class="optional-text">(Optional)</span><input type="text" id="fname" name="fname"
                     optional></label>
 
-            <label>User Name <span class="optional-text">(Optional)</span><input type="text" id="fname" name="fname" optional></label>
-
-            <input type="submit" value="Send my review">
+            <input type="submit" class="back-form" value="Send my review">
         </form>
     </main>
     <footer>
