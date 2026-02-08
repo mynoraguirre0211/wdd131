@@ -30,9 +30,18 @@
 
     #product,
     #dateinstall,
-    #review,
     #fname {
         font-size: large;
+        height: 44px;
+    }
+
+    #review {
+        height: 80px;
+        font-size: large;
+    }
+
+    .star {
+        font-size: 2.2rem;
     }
 
     /* review */
