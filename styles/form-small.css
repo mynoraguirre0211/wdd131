@@ -10,9 +10,9 @@
     --third-color: rgb(38 38 176);
     --background-color: rgb(31 37 77);
     --text-color: rgb(255 255 255);
-    --font-headers: "Shadows Into Light Two", cursive;
-    --font-text: "Truculenta", sans-serif;
-    --font-extra: "Give Your Glory", serif;
+    --font-headers: "DM Serif Text", serif;
+    --font-text: "Tinos", serif;
+    --font-extra: "Yrsa", serif;
 }
 
 body {
@@ -28,7 +28,7 @@ main {
 }
 
 h1 {
-    font-family: "DM Serif Text", serif;
+    font-family: var(--font-headers);
     font-weight: 200;
 }
 
@@ -54,21 +54,21 @@ fieldset {
 legend {
     margin-top: 10px;
     font-size: 1.2em;
-    font-family: "Tinos", serif;
+    font-family: var(--font-text);
 }
 
 label {
     display: block;
     margin: 10px 0;
     font-size: 1.2em;
-    font-family: "Tinos", serif;
+    font-family: var(--font-text);
 }
 
 input {
     display: block;
     width: 100%;
     max-width: 400px;
-    font-family: "Yrsa", serif;
+    font-family: var(--font-extra);
 }
 
 input[type="checkbox"] {
@@ -140,6 +140,7 @@ input[type="submit"] {
     height: 35px;
     border-radius: 3px;
     border: 1px solid rgb(0, 0, 0, 0.2);
+    font-family: var(--font-extra);
 }
 
 #dateinstall {
@@ -152,11 +153,13 @@ input[type="submit"] {
     height: 80px;
     border-radius: 3px;
     border: 1px solid rgb(0, 0, 0, 0.2);
+    font-family: var(--font-extra);
 }
 
 input[type="textarea"],
 input[type="text"] {
     padding: 0 10px;
+    font-family: var(--font-extra);
 }
 
 /* review */
