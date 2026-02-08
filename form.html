@@ -24,20 +24,22 @@
     <main>
         <form method="get" action="review.html" autocomplete="off">
             <fieldset>
-                <legend>Product Information</legend>
-                <select name="product" id="product" required>
-                    <option value="" disabled selected>Choose a Product...</option>
-                    <!-- To insert values -->
-                </select>
+                <label>Product Information
+                    <select name="product" id="product" required>
+                        <option value="" disabled selected>Select a Product...</option>
+                    </select>
+                </label>
             </fieldset>
 
             <fieldset class="stars">
                 <legend>Overall Rating</legend>
-                <label>&star;<input type="radio" id="fivestars" name="fivestars" required></label>
-                <label>&star;&star;<input type="radio" id="fivestars" name="fivestars" required></label>
-                <label>&star;&star;&star;<input type="radio" id="fivestars" name="fivestars" required></label>
-                <label>&star;&star;&star;&star;<input type="radio" id="fivestars" name="fivestars" required></label>
-                <label>&star;&star;&star;&star;&star;<input type="radio" id="fivestars" name="fivestars"
+                <label>&star;<input type="radio" id="fivestars" name="fivestars" value="one"></label>
+                <label>&star;&star;<input type="radio" id="fivestars1" name="fivestars" value="two" required></label>
+                <label>&star;&star;&star;<input type="radio" id="fivestars2" name="fivestars" value="three"
+                        required></label>
+                <label>&star;&star;&star;&star;<input type="radio" id="fivestars3" name="fivestars" value="four"
+                        required></label>
+                <label>&star;&star;&star;&star;&star;<input type="radio" id="fivestars4" name="fivestars" value="five"
                         required></label>
             </fieldset>
 
@@ -52,10 +54,10 @@
             </fieldset>
 
             <label>Written Review <span class="optional-text">(Optional)</span><input type="textarea" id="review"
-                    name="review" optional></label>
+                    name="review"></label>
 
-            <label>User Name <span class="optional-text">(Optional)</span><input type="text" id="fname" name="fname"
-                    optional></label>
+            <label>User Name <span class="optional-text">(Optional)</span><input type="text" id="fname"
+                    name="fname"></label>
 
             <input type="submit" class="back-form" value="Send my review">
         </form>

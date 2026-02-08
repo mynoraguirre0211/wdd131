@@ -1,0 +1,59 @@
+@media screen and (min-width: 800px) {
+
+    body {
+        max-width: 800px;
+        width: 800px;
+        justify-self: center;
+    }
+
+    main {
+        border: 1px solid var(--primary-color);
+        margin: 20px auto;
+        background-color: var(--secondary-color);
+        color: black;
+    }
+
+    h1 {
+        font-family: var(--font-headers);
+        font-weight: 400;
+        font-size: 50px;
+    }
+
+    select {
+        display: block;
+    }
+
+    label,
+    legend {
+        font-size: x-large;
+    }
+
+    #product,
+    #dateinstall,
+    #review,
+    #fname {
+        font-size: large;
+    }
+
+    /* review */
+
+    body {
+        width: 300px;
+        margin-top: 50px;
+    }
+
+    .container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .container p {
+        text-align: center;
+    }
+
+    .back-form {
+        display: block;
+        justify-self: center;
+    }
+
+}
