@@ -24,42 +24,70 @@
     <main>
         <form method="get" action="review.html" autocomplete="off">
             <fieldset>
-                <label>Product Information
-                    <select name="product" id="product" required>
-                        <option value="" disabled selected>Select a Product...</option>
-                    </select>
-                </label>
+                <label for="product">Product Information</label>
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
             </fieldset>
 
             <fieldset class="stars">
                 <legend>Overall Rating</legend>
-                <label><span class="star">&star;</span><input type="radio" id="fivestars" name="fivestars" value="one"
-                        required></label>
-                <label><span class="star">&star;&star;</span><input type="radio" id="fivestars1" name="fivestars"
-                        value="two" required></label>
-                <label><span class="star">&star;&star;&star;</span><input type="radio" id="fivestars2" name="fivestars"
-                        value="three" required></label>
-                <label><span class="star">&star;&star;&star;&star;</span><input type="radio" id="fivestars3"
-                        name="fivestars" value="four" required></label>
-                <label><span class="star">&star;&star;&star;&star;&star;</span><input type="radio" id="fivestars4"
-                        name="fivestars" value="five" required></label>
+
+                <div class="star-group">
+                    <label for="star1">&star;</label>
+                    <input type="radio" id="star1" name="rating" value="1" required>
+                </div>
+
+                <div class="star-group">
+                    <label for="star2">&star;&star;</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                </div>
+
+                <div class="star-group">
+                    <label for="star3">&star;&star;&star;</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                </div>
+
+                <div class="star-group">
+                    <label for="star4">&star;&star;&star;&star;</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                </div>
+
+                <div class="star-group">
+                    <label for="star5">&star;&star;&star;&star;&star;</label>
+                    <input type="radio" id="star5" name="rating" value="5">
+                </div>
             </fieldset>
 
-            <label>Date of Installation<input type="date" id="dateinstall" name="dateinstall"></label>
+
+            <label for="dateinstall">Date of Installation</label>
+            <input type="date" id="dateinstall" name="dateinstall">
 
             <fieldset class="features">
                 <legend>Which feature did you find useful in the product? (Check all that apply)</legend>
-                <label><input type="checkbox" id="feature" name="feature" value="Durability">Durability</label>
-                <label><input type="checkbox" id="feature1" name="feature1" value="Ease of Use">Ease of Use</label>
-                <label><input type="checkbox" id="feature2" name="feature2" value="Performance">Performance</label>
-                <label><input type="checkbox" id="feature3" name="feature3" value="Design">Design</label>
+
+                <label for="feature">
+                    <input type="checkbox" id="feature" name="feature" value="Durability"> Durability
+                </label>
+
+                <label for="feature1">
+                    <input type="checkbox" id="feature1" name="feature1" value="Ease of Use"> Ease of Use
+                </label>
+
+                <label for="feature2">
+                    <input type="checkbox" id="feature2" name="feature2" value="Performance"> Performance
+                </label>
+
+                <label for="feature3">
+                    <input type="checkbox" id="feature3" name="feature3" value="Design"> Design
+                </label>
             </fieldset>
 
-            <label>Written Review <span class="optional-text">(Optional)</span><textarea id="review"
-                    name="review"></textarea></label>
+            <label for="review">Written Review <span class="optional-text">(Optional)</span></label>
+            <textarea id="review" name="review"></textarea>
 
-            <label>User Name <span class="optional-text">(Optional)</span><input type="text" id="fname"
-                    name="fname"></label>
+            <label for="fname">User Name <span class="optional-text">(Optional)</span></label>
+            <input type="text" id="fname" name="fname">
 
             <input type="submit" class="back-form" value="Send my review">
         </form>

@@ -1,8 +1,8 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
 
     body {
-        max-width: 800px;
-        width: 800px;
+        max-width: 600px;
+        width: 100%;
         justify-self: center;
     }
 
@@ -40,8 +40,26 @@
         font-size: large;
     }
 
-    .star {
-        font-size: 2.2rem;
+    .stars {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        max-width: 600px;
+    }
+
+    .star-group label {
+        font-size: 2rem;
+        font-weight: bold;
+        color: rgb(85 85 85);
+        cursor: pointer;
+        transition: color 0.2s;
+    }
+
+    .star-group input {
+        margin-top: .3rem;
+        transform: scale(0.85);
+        height: 20px;
+        width: 20px;
     }
 
     /* review */

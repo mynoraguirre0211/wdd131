@@ -85,37 +85,52 @@ select {
 
 /* Classes */
 
+
+/* stars */
 .stars {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    max-width: 400px;
 }
 
-.stars label {
-    font-size: 1.5em;
-    color: rgb(0, 0, 0);
+.star-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 60px;
+}
+
+.star-group label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(85 85 85);
     cursor: pointer;
-    margin: 0 auto;
-    height: auto;
-}
-
-.stars input[type="radio"] {
-    justify-self: center;
-    width: 15px;
-    height: 15px;
-    border: 2px solid var(--secondary-color);
-}
-
-.star {
-    font-size: 1.2rem;
-    color: rgb(63 63 63);
     transition: color 0.2s;
+    padding: 1px;
+    margin: 0;
 }
 
-label:hover .star,
-input:checked+.star {
+.star-group input {
+    margin-top: .3rem;
+    transform: scale(0.85);
+}
+
+.star-group input:checked+label,
+.star-group:has(input:checked) label {
+    color: rgb(255, 201, 24);
+}
+
+.star-group label:hover {
     color: rgb(255, 215, 0);
 }
 
+.star-group input:hover {
+    color: rgb(255, 215, 0);
+}
+
+/* checkbox */
 .features label {
     display: flex;
     flex-direction: row;
