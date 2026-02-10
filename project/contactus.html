@@ -23,8 +23,29 @@
             <a href="contactus.html" target="_blank">Contact Us</a>
         </nav>
     </header>
-    <main>
+    <main class="container">
+        <h1 class="section-title">Contact Us</h1>
 
+        <form id="contact-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required>
+
+            <label for="language">Language Interested In</label>
+            <select id="language" required>
+                <option value="">Select one...</option>
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+
+            <button class="btn" type="submit">Send Message</button>
+            <p id="form-status" style="margin-top:1rem;font-weight:600;"></p>
+        </form>
     </main>
     <footer>
         <p> © <span id="currentyear"></span> 🎶 Mynor Aguirre 🎶 Guatemala, Guatemala</p>
