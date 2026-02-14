@@ -1,9 +1,12 @@
 :root {
     --cero: black;
-    --primary: #a0c5f9;
-    --secondary: #f483aa;
-    --third: #99f7af;
-    --background: #fdfcce;
+    --pastel-blue: #CDE7F0;
+    --pastel-pink: #F8C8DC;
+    --pastel-lavender: #E6D6F5;
+    --pastel-green: #CDEEDC;
+    --pastel-yellow: #FFF3C4;
+    --primary-text: #2F3E46;
+    --accent: #FF8FAB;
     --highlight: #ffb998;
     --bg: #f4f9ff;
     --text: #0b346c;
@@ -20,14 +23,22 @@
 }
 
 body {
-    font-family: var(--font-main);
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text);
     background: var(--bg);
-    color: var(--text);
     line-height: 1.6;
 }
 
 main {
     background-color: var(--background);
+}
+
+img {
+    transition: transform 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
 }
 
 /* ---------- HEADER ---------- */
@@ -83,12 +94,30 @@ h1 a {
     color: var(--primary);
 }
 
+.hero-curve {
+    position: relative;
+    background: var(--pastel-yellow);
+}
+
+.wave svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* ---------- HERO ---------- */
 .hero {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr auto;
     gap: 2rem;
     align-items: center;
+    background: linear-gradient(135deg, #CDE7F0, #E6D6F5);
+    padding: 30px 2%;
+    width: 100%;
+}
+
+.hero-text {
+    width: 400px;
 }
 
 .hero-text h1 {
@@ -102,18 +131,19 @@ h1 a {
 }
 
 .btn {
-    background: var(--secondary);
+    background-color: var(--pastel-pink);
     color: white;
     border: none;
-    padding: .8rem 1.5rem;
+    padding: 12px 24px;
     border-radius: 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: transform .2s ease;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    background-color: #FF8FAB;
 }
 
 .hero-img {
@@ -151,12 +181,15 @@ h1 a {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 1.5rem;
     text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
 }
 
 .icon-circle {
     width: 80px;
     height: 80px;
-    background: var(--primary);
+    background: var(--pastel-blue);
     border-radius: 50%;
     margin: auto;
     display: flex;
@@ -165,17 +198,23 @@ h1 a {
     font-size: 1.8rem;
 }
 
+.icon-circle:hover {
+    transform: scale(1.05);
+}
+
 /* ---------- CTA SECTION ---------- */
 .cta-section {
-    background: var(--third);
     color: var(--cero);
-    border-radius: 30px;
-    padding: 3rem 2rem;
     margin: 3rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: center;
+    justify-self: center;
+    background-color: var(--pastel-green);
+    border-radius: 40px;
+    padding: 60px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
 }
 
 .sch-class {
