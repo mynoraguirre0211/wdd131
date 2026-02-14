@@ -1,11 +1,16 @@
 :root {
-    --primary: #4f8cff;
-    --secondary: #ff6bb5;
-    --accent: #ffd84d;
+    --cero: black;
+    --primary: #a0c5f9;
+    --secondary: #f483aa;
+    --third: #99f7af;
+    --background: #fdfcce;
+    --highlight: #ffb998;
     --bg: #f4f9ff;
-    --text: #2b2b2b;
+    --text: #0b346c;
     --card-radius: 20px;
-    --font-main: "Arial", sans-serif;
+    --font-header: "Arial", sans-serif;
+    --font-text: "arial";
+    --font-btn: "arial";
 }
 
 * {
@@ -21,13 +26,18 @@ body {
     line-height: 1.6;
 }
 
+main {
+    background-color: var(--background);
+}
+
 /* ---------- HEADER ---------- */
 header {
     background: white;
-    padding: 1rem 2rem;
+    padding: 2px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 90px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
 }
 
@@ -35,19 +45,28 @@ header {
     font-weight: bold;
     font-size: 1.3rem;
     color: var(--primary);
-    width: 120px;
-    height: auto;
+    width: 90px;
+    height: 90px;
 }
 
 nav a {
     margin-left: 1rem;
     text-decoration: none;
     color: var(--text);
-    font-weight: 600;
+    font-weight: 70px;
 }
 
 nav a:hover {
-    color: var(--primary);
+    color: var(--highlight);
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--text);
 }
 
 /* ---------- GENERAL LAYOUT ---------- */
@@ -97,6 +116,11 @@ nav a:hover {
     transform: scale(1.05);
 }
 
+.hero-img {
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
 /* ---------- CARDS ---------- */
 .cards {
     display: grid;
@@ -131,9 +155,9 @@ nav a:hover {
 }
 
 .icon-circle {
-    width: 70px;
-    height: 70px;
-    background: var(--accent);
+    width: 80px;
+    height: 80px;
+    background: var(--primary);
     border-radius: 50%;
     margin: auto;
     display: flex;
@@ -144,7 +168,8 @@ nav a:hover {
 
 /* ---------- CTA SECTION ---------- */
 .cta-section {
-    background: linear-gradient(135deg, #e7f1ff, #fff0f8);
+    background: var(--third);
+    color: var(--cero);
     border-radius: 30px;
     padding: 3rem 2rem;
     margin: 3rem 0;
@@ -152,6 +177,11 @@ nav a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: center;
+}
+
+.sch-class {
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 /* ---------- FORMS ---------- */

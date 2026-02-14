@@ -1,6 +1,5 @@
-/* ================================
-   DATA (Objects + Arrays)
-================================ */
+/* DATA (Objects + Arrays) */
+
 const courses = [
     {
         id: "english",
@@ -26,15 +25,12 @@ const courses = [
     }
 ];
 
-/* ================================
-   UTILITIES
-================================ */
+/* UTILITIES */
+
 const qs = (selector) => document.querySelector(selector);
 const qsa = (selector) => document.querySelectorAll(selector);
 
-/* ================================
-   LOCAL STORAGE
-================================ */
+/* LOCAL STORAGE */
 function savePreference(language) {
     localStorage.setItem("preferredLanguage", language);
 }
@@ -43,9 +39,7 @@ function getPreference() {
     return localStorage.getItem("preferredLanguage");
 }
 
-/* ================================
-   DOM RENDERING
-================================ */
+/* DOM RENDERING */
 function renderCourses(containerId) {
     const container = qs(containerId);
     if (!container) return;
@@ -88,9 +82,7 @@ function renderImportance(language, elementId) {
     element.textContent = course.importance;
 }
 
-/* ================================
-   EVENT HANDLERS
-================================ */
+/* EVENT HANDLERS */
 function handleCourseSelection() {
     document.body.addEventListener("click", (event) => {
         const btn = event.target.closest(".select-course");
@@ -154,9 +146,8 @@ function handleTrialButtons() {
     });
 }
 
-/* ================================
-   INITIALIZATION
-================================ */
+/* INITIALIZATION */
+
 function init() {
     renderCourses("#courses-container");
     handleCourseSelection();
