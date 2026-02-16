@@ -5,7 +5,7 @@ const courses = [
         id: "english",
         title: "English",
         description: "Discover a fun and natural way to learn English with engaging online classes! ✨ ",
-        importance: "English opens doors to global education, careers, and travel opportunities.",
+        importance: "Starting English between ages 1 and 4 gives children a natural advantage, since young minds learn languages quickly through play, songs, and daily interaction. For Guatemalan parents, early English learning opens the door to better education, future career opportunities, and greater confidence in a global world. Our affordable online classes are specially designed for little learners, using fun, age- appropriate techniques that help children enjoy the process while building strong English skills from the very beginning.",
         stories: [
             { name: "Lucas", result: "Improved school grades and confidence." },
         ]
@@ -14,7 +14,7 @@ const courses = [
         id: "spanish",
         title: "Spanish",
         description: "Discover a fun and natural way to learn Spanish with personalized, engaging online classes! ✨",
-        importance: "Spanish connects children to millions of speakers and diverse cultures worldwide.",
+        importance: "Spanish is one of the most widely spoken languages in the world, giving children the opportunity to connect with millions of people and cultures. For parents, helping their children learn Spanish as a second language is an investment in their future, as bilingual kids often develop stronger communication skills, better academic performance, and greater confidence. Through personalized and engaging classes, children can learn Spanish in a natural and fun way, building real- life speaking skills that will support them in school, travel, and future career opportunities.",
         stories: [
             { name: "Sofia", result: "Now speaks with her grandparents confidently." },
         ]
@@ -145,15 +145,63 @@ function handleTrialButtons() {
 /* INITIALIZATION */
 
 function init() {
+
+    // Página de cursos
     renderCourses("#courses-container");
+
     handleCourseSelection();
     handleContactForm();
     handleTrialButtons();
+    showAudienceMessage();
 
     const preferred = getPreference();
     if (preferred && qs("#preferred-language")) {
-        qs("#preferred-language").textContent = `Your preferred language: ${preferred.toUpperCase()}`;
+        qs("#preferred-language").textContent =
+            `Your preferred language: ${preferred.toUpperCase()}`;
+    }
+
+    /* DETECTAR SI ESTAMOS EN PAGINA DE IDIOMA */
+
+    const importanceEl = qs("#importance-text");
+    const storiesEl = qs("#stories-container");
+
+    if (importanceEl && storiesEl) {
+
+        let language = "";
+
+        if (window.location.pathname.includes("english")) {
+            language = "english";
+        }
+
+        if (window.location.pathname.includes("spanish")) {
+            language = "spanish";
+        }
+
+        if (language) {
+            renderImportance(language, "#importance-text");
+            renderSuccessStories(language, "#stories-container");
+        }
     }
 }
 
 document.addEventListener("DOMContentLoaded", init);
+
+function showAudienceMessage() {
+    const banner = qs("#audience-message");
+    if (!banner) return;
+
+    const preferred = getPreference();
+
+    let message = "";
+
+    if (preferred === "spanish") {
+        message = "Perfect for families in the USA who want their kids to speak Spanish naturally";
+    } else if (preferred === "english") {
+        message = "Ideal for Guatemalan parents who want their kids to learn English early 🇬🇹";
+    } else {
+        message = "Start your child’s bilingual journey today!";
+    }
+
+    banner.textContent = message;
+}
+

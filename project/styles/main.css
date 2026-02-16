@@ -154,6 +154,17 @@ h1 a {
     padding: 8px;
 }
 
+.hero-sub {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+}
+
 .btn {
     background-color: var(--pastel-pink);
     color: var(--primary-text);
@@ -247,6 +258,20 @@ h1 a {
     border: 1px solid rgb(0, 0, 0, 0.5);
     border-radius: 10px;
     width: 500px;
+}
+
+#importance-text {
+    background-color: var(--pastel-green);
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: x-large;
+}
+
+#audience-message {
+    justify-self: center;
+    padding: 10px;
 }
 
 /* ---------- FORMS ---------- */
