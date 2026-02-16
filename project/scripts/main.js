@@ -192,9 +192,9 @@ function showAudienceMessage() {
     let message = "";
 
     if (preferred === "spanish") {
-        message = "Perfect for families in the USA who want their kids to speak Spanish naturally";
+        message = "Perfect for parents who want their kids to speak Spanish naturally";
     } else if (preferred === "english") {
-        message = "Ideal for Guatemalan parents who want their kids to learn English early 🇬🇹";
+        message = "Ideal for those parents who want their kids to learn English early 🇬🇹";
     } else {
         message = "Start your child’s bilingual journey today!";
     }

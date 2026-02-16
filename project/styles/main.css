@@ -66,7 +66,7 @@ header {
 nav a {
     margin-left: 1rem;
     text-decoration: none;
-    color: var(--text);
+    color: var(--primary-text);
     font-weight: 70px;
 }
 
@@ -80,9 +80,9 @@ nav a:hover {
     font-size: 60px;
 }
 
-h1 a {
+div a {
     text-decoration: none;
-    color: var(--text);
+    color: var(--primary-text);
     font-family: "Righteous", sans-serif;
     font-weight: 400;
     font-size: 60px;
@@ -175,31 +175,28 @@ a {
     width: 100%;
 }
 
-.hero-text {
-    width: 400px;
-    margin-left: 50px;
-}
-
 .hero-text h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    font-family: "Righteous", sans-serif;
 }
 
 .hero-text {
-    width: 500px;
-    margin-left: 100px;
+    width: 600px;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 20px 10px;
 }
 
-.hero-text p,
 .icon-row p,
 .cta-section p {
     margin-bottom: 1.5rem;
-    font-size: 1.1rem;
+    font-size: 2rem;
     padding: 8px;
 }
 
 .hero-sub {
-    font-size: 1.2rem;
+    font-size: 20px;
     color: #444;
     margin-bottom: 2rem;
     font-family: "Lexend", sans-serif;
@@ -214,7 +211,7 @@ a {
     background-color: var(--pastel-pink);
     color: var(--primary-text);
     border: none;
-    padding: 12px 24px;
+    padding: 15px;
     border-radius: 30px;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -336,7 +333,7 @@ a {
 form {
     max-width: 500px;
     margin: auto;
-    background: white;
+    background: var(--pastel-blue);
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
@@ -374,6 +371,6 @@ footer {
     background: #222;
     color: white;
     text-align: center;
-    padding: 1.5rem;
-    margin-top: 3rem;
+    padding: 1rem;
+    margin-top: 2rem;
 }
