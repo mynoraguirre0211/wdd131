@@ -146,7 +146,6 @@ function handleTrialButtons() {
 
 function init() {
 
-    // Página de cursos
     renderCourses("#courses-container");
 
     handleCourseSelection();
@@ -159,8 +158,6 @@ function init() {
         qs("#preferred-language").textContent =
             `Your preferred language: ${preferred.toUpperCase()}`;
     }
-
-    /* DETECTAR SI ESTAMOS EN PAGINA DE IDIOMA */
 
     const importanceEl = qs("#importance-text");
     const storiesEl = qs("#stories-container");

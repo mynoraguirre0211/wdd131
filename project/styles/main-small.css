@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+
+    .hero,
+    .cta-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}

@@ -8,9 +8,14 @@
     <meta name="Author" content="Mynor Aguirre">
     <meta name="description" content="This is the landing page whenever you search for spanish and english classes">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="stylesheet" href="styles/main-small.css">
     <script src="scripts/main.js" defer></script>
     <script src="scripts/footer.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Lexend:wght@100..900&family=Patrick+Hand&family=Righteous&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -26,12 +31,15 @@
 
     <main class="container">
         <h1 class="section-title">Why Learn English?</h1>
-        <p id="importance-text"></p>
-    
+        <div class="importance">
+            <p id="importance-text"></p>
+            <img src="images/why.png" alt="why learn the language">
+        </div>
+
         <section style="margin-top:3rem; text-align:center;">
             <button class="btn trial-btn">Schedule a Trial Class</button>
         </section>
-        
+
         <section style="margin-top:3rem;">
             <h2 class="section-title">Success Stories</h2>
             <div class="cards" id="stories-container"></div>
