@@ -4,23 +4,19 @@ const courses = [
     {
         id: "english",
         title: "English",
-        description: "Learn English through fun stories, games, and real-life conversations.",
+        description: "Discover a fun and natural way to learn English with engaging online classes! ✨ ",
         importance: "English opens doors to global education, careers, and travel opportunities.",
         stories: [
             { name: "Lucas", result: "Improved school grades and confidence." },
-            { name: "Emma", result: "Now communicates fluently with international friends." },
-            { name: "Noah", result: "Passed his school English exams with excellence." }
         ]
     },
     {
         id: "spanish",
         title: "Spanish",
-        description: "Learn Spanish naturally with playful activities and cultural immersion.",
+        description: "Discover a fun and natural way to learn Spanish with personalized, engaging online classes! ✨",
         importance: "Spanish connects children to millions of speakers and diverse cultures worldwide.",
         stories: [
             { name: "Sofia", result: "Now speaks with her grandparents confidently." },
-            { name: "Mateo", result: "Improved reading and pronunciation skills." },
-            { name: "Isabella", result: "Won a school language competition." }
         ]
     }
 ];
