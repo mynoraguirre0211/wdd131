@@ -31,6 +31,7 @@ body {
 
 main {
     background-color: var(--background);
+    width: 100%;
 }
 
 img {
@@ -48,8 +49,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
+    height: 100px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    border-bottom: 10px solid var(--pastel-blue);
 }
 
 .logo {
@@ -82,7 +84,7 @@ h1 a {
 
 /* ---------- GENERAL LAYOUT ---------- */
 .container {
-    max-width: 1100px;
+    max-width: 100%;
     margin: auto;
     padding: 3rem 1.5rem;
 }
@@ -97,6 +99,8 @@ h1 a {
 .hero-curve {
     position: relative;
     background: var(--pastel-yellow);
+    width: 100%;
+    justify-self: center;
 }
 
 .wave svg {
@@ -105,7 +109,15 @@ h1 a {
     height: auto;
 }
 
+.container-curve {
+    position: relative;
+    background: linear-gradient(135deg, #CDE7F0, #E6D6F5);
+    width: 100%;
+    justify-self: center;
+}
+
 /* ---------- HERO ---------- */
+
 .hero {
     display: grid;
     grid-template-columns: 2fr auto;
@@ -125,14 +137,17 @@ h1 a {
     margin-bottom: 1rem;
 }
 
-.hero-text p {
+.hero-text p,
+.icon-row p,
+.cta-section p {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
+    padding: 8px;
 }
 
 .btn {
     background-color: var(--pastel-pink);
-    color: white;
+    color: var(--primary-text);
     border: none;
     padding: 12px 24px;
     border-radius: 30px;
@@ -158,7 +173,7 @@ h1 a {
 }
 
 .card {
-    background: white;
+    background: #CDE7F0;
     padding: 2rem;
     border-radius: var(--card-radius);
     text-align: center;
@@ -179,23 +194,21 @@ h1 a {
 .icon-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 1.5rem;
+    gap: 3.5rem;
     text-align: center;
-    padding: 20px;
     border-radius: 20px;
-    transition: transform 0.3s ease;
 }
 
 .icon-circle {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     background: var(--pastel-blue);
     border-radius: 50%;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 3.5rem;
 }
 
 .icon-circle:hover {
