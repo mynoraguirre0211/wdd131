@@ -43,6 +43,7 @@ img:hover {
 }
 
 /* ---------- HEADER ---------- */
+
 header {
     background: white;
     padding: 2px 50px;
@@ -109,6 +110,13 @@ h1 a {
     height: auto;
 }
 
+.wave-top {
+    position: relative;
+    background: var(--pastel-yellow);
+    width: 100%;
+    justify-self: center;
+}
+
 .container-curve {
     position: relative;
     background: linear-gradient(135deg, #CDE7F0, #E6D6F5);
@@ -164,6 +172,10 @@ h1 a {
 
 .hero-img {
     border-radius: 4px;
+    width: 500px;
+    border: 1px solid var(--primary-text);
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 /* ---------- CARDS ---------- */
@@ -234,6 +246,7 @@ h1 a {
 .sch-class {
     border: 1px solid rgb(0, 0, 0, 0.5);
     border-radius: 10px;
+    width: 500px;
 }
 
 /* ---------- FORMS ---------- */
