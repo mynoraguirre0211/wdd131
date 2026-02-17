@@ -1,0 +1,452 @@
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        margin-right: 10px;
+    }
+
+    .ncompany {
+        width: 2500px;
+        text-align: center;
+        text-align: end;
+        padding-right: 120px;
+    }
+
+    .hero {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .icon-row {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .cta-section {
+        flex-direction: row;
+    }
+
+    .importance {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #importance-text {
+        width: 100%;
+        height: 302px;
+        font-size: 1rem;
+    }
+
+    .importance img {
+        width: 100%;
+        height: 302px;
+        max-width: 350px;
+    }
+}
+
+/*:root {
+    --cero: black;
+    --pastel-blue: #CDE7F0;
+    --pastel-pink: #F8C8DC;
+    --pastel-lavender: #E6D6F5;
+    --pastel-green: #CDEEDC;
+    --pastel-yellow: #FFF3C4;
+    --primary-text: #2F3E46;
+    --accent: #FF8FAB;
+    --highlight: #ffb998;
+    --bg: #f4f9ff;
+    --text: #0b346c;
+    --card-radius: 20px;
+    --font-header: "Arial", sans-serif;
+    --font-text: "arial";
+    --font-btn: "arial";
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text);
+    background: var(--bg);
+    line-height: 1.6;
+}
+
+main {
+    background-color: var(--background);
+    width: 100%;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/* ---------- HEADER ---------- */
+/*
+header {
+    background: white;
+    padding: 2px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    border-bottom: 10px solid var(--pastel-blue);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--primary);
+    width: 70px;
+    height: 70px;
+}
+
+nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: var(--primary-text);
+    font-weight: 50px;
+}
+
+nav a:hover {
+    color: var(--highlight);
+}
+
+/* small navigation */
+/*
+#menu {
+    font-size: xx-large;
+    border: 0;
+    background: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.container h2 {
+    font-family: "Righteous", sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+div a {
+    text-decoration: none;
+    color: var(--primary-text);
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+p {
+    font-family: "Caveat Brush", cursive;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: "Lexend", sans-serif;
+    font-size: 40px;
+    background-color: var(--pastel-pink);
+    max-width: fit-content;
+    justify-self: center;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--text);
+}
+
+footer p {
+    font-size: 15px;
+    height: 20px;
+}
+
+/* ---------- GENERAL LAYOUT ---------- */
+/*
+.container {
+    max-width: 100%;
+    margin: auto;
+    padding: 3rem 1.5rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--primary);
+    font-family: "Righteous", sans-serif;
+    font-size: 50px;
+}
+
+.hero-curve {
+    position: relative;
+    background: var(--pastel-yellow);
+    width: 100%;
+    justify-self: center;
+}
+
+.wave svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.wave-top {
+    position: relative;
+    background: var(--pastel-yellow);
+    width: 100%;
+    justify-self: center;
+}
+
+.container-curve {
+    position: relative;
+    background: linear-gradient(135deg, #CDE7F0, #E6D6F5);
+    width: 100%;
+    justify-self: center;
+}
+
+.ncompany a {
+    font-family: "Righteous", sans-serif;
+    font-weight: 150px;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+a {
+    font-family: "Lexend", sans-serif;
+}
+
+/* ---------- HERO ---------- */
+/*
+.hero {
+    display: grid;
+    grid-template-columns: 2fr auto;
+    gap: 2rem;
+    align-items: center;
+    background: linear-gradient(135deg, #CDE7F0, #E6D6F5);
+    padding: 30px 2%;
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: "Righteous", sans-serif;
+}
+
+.hero-text {
+    width: 600px;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 20px 10px;
+}
+
+.icon-row p,
+.cta-section p {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    padding: 8px;
+}
+
+.hero-sub {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 2rem;
+    font-family: "Lexend", sans-serif;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    background-color: var(--pastel-pink);
+    color: var(--primary-text);
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Patrick Hand", cursive;
+    font-size: 20px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background-color: #FF8FAB;
+}
+
+.hero-img {
+    border-radius: 4px;
+    width: 500px;
+    border: 1px solid var(--primary-text);
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+/* ---------- CARDS ---------- */
+/*
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: #CDE7F0;
+    padding: 2rem;
+    border-radius: var(--card-radius);
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    transition: transform .2s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+/* ---------- ICON ROW ---------- */
+/*
+.icon-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 3.5rem;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.icon-circle {
+    width: 150px;
+    height: 150px;
+    background: var(--pastel-blue);
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+}
+
+.icon-circle:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- CTA SECTION ---------- */
+/*
+.cta-section {
+    color: var(--cero);
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-self: center;
+    background-color: var(--pastel-green);
+    border-radius: 40px;
+    padding: 60px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+}
+
+.sch-class {
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 500px;
+}
+
+#importance-text {
+    background-color: var(--pastel-green);
+    padding: 30px 20px;
+    border: none;
+    text-align: center;
+    font-size: x-large;
+}
+
+#audience-message {
+    justify-self: center;
+    padding: 10px;
+}
+
+.importance {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid rgb(6, 6, 6, 0.2);
+}
+
+.importance img {
+    width: 350px;
+    padding: 30px;
+    background-color: var(--pastel-green)
+}
+
+/* ---------- FORMS ---------- */
+/*
+form {
+    max-width: 500px;
+    margin: auto;
+    background: var(--pastel-blue);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: .6rem;
+    margin-top: .3rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form button {
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+/* ---------- FOOTER ---------- */
+/*
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+*/

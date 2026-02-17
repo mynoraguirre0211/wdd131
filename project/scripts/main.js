@@ -153,6 +153,7 @@ function init() {
     handleTrialButtons();
     showAudienceMessage();
 
+
     const preferred = getPreference();
     if (preferred && qs("#preferred-language")) {
         qs("#preferred-language").textContent =

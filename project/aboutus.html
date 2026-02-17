@@ -8,7 +8,7 @@
     <meta name="Author" content="Mynor Aguirre">
     <meta name="description" content="This is the landing page whenever you search for spanish and english classes">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/main-small.css">
+    <link rel="stylesheet" href="styles/main-large.css">
     <script src="scripts/main.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,18 +20,21 @@
 
 <body>
     <header>
+        <button type="button" id="menu"></button>
         <img src="images/logo.jpg" alt="logo from the lenguage academy" loading="lazy" class="logo">
-        <div class="ncompany"><a href="index.html">Andrea´s Academy</a></div>
+        <span class="ncompany"><a href="index.html">Andrea´s Academy</a></span>
         <nav>
-            <a href="courses.html">Courses</a>
-            <a href="aboutus.html">About Us</a>
-            <a href="contactus.html">Contact Us</a>
+            <ul class="navigation">
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
     
     <main class="container">
         <h1 class="section-title">About Our Academy</h1>
-        <p>
+        <p class="au-info">
             Academia Kids is dedicated to helping children learn new languages naturally through play, creativity, and
             interaction.
             Our mission is to create confident bilingual learners in a safe and fun environment.
