@@ -14,7 +14,7 @@
 
     .hero {
         display: grid;
-        grid-template-columns: auto 0.75fr;
+        grid-template-columns: auto 1.5fr;
     }
 
     .ncompany {
@@ -42,6 +42,7 @@
     }
 
     .hero img {
+        width: 500px;
         height: 300px;
         margin-right: 130px;
     }
