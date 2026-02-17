@@ -291,7 +291,7 @@ nav {
 }
 
 .importance img {
-    width: 450px;
+    width: auto;
     padding: 20px;
     background-color: var(--pastel-green)
 }
