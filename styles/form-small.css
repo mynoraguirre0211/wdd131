@@ -131,6 +131,12 @@ select {
 }
 
 /* checkbox */
+
+.features div {
+    display: flex;
+    flex-direction: row;
+}
+
 .features label {
     display: flex;
     flex-direction: row;
@@ -143,6 +149,14 @@ select {
 .optional-text {
     color: var(--third-color);
     font-weight: normal;
+}
+
+input[type="checkbox"] {
+    align-self: center;
+}
+
+.feature-usage label {
+    margin-left: 10px;
 }
 
 input[type="submit"] {
@@ -161,6 +175,10 @@ input[type="submit"] {
 textarea {
     display: block;
     padding: 10px;
+}
+
+.star-group {
+    margin: 10px;
 }
 
 /* ID´s */
