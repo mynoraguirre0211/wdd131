@@ -14,14 +14,19 @@
 
     .hero {
         display: grid;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: auto 0.75fr;
     }
 
     .ncompany {
         width: 2500px;
-        text-align: center;
         text-align: end;
         padding-right: 120px;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 1300px;
+        text-align: end;
     }
 
     .hero-text h1 {
@@ -36,11 +41,9 @@
         font-size: 30px;
     }
 
-    .hero-img {
-        width: 900px;
-        height: 350px;
-        padding-right: 40px;
-        padding-top: 30px;
+    .hero img {
+        height: 300px;
+        margin-right: 130px;
     }
 
     .btn {
