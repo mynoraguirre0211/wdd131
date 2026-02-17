@@ -12,6 +12,11 @@
         margin-right: 10px;
     }
 
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+
     .ncompany {
         width: 2500px;
         text-align: center;
@@ -19,13 +24,41 @@
         padding-right: 120px;
     }
 
-    .hero {
-        flex-direction: row;
-        text-align: left;
+    .hero-text h1 {
+        padding-bottom: 20px;
+        padding-left: 20px;
+        font-size: 50px;
+    }
+
+    .hero-text p,
+    .hero-cta {
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    .hero-img {
+        width: 900px;
+        height: 350px;
+        padding-right: 40px;
+        padding-top: 30px;
+    }
+
+    .btn {
+        font-size: 30px;
     }
 
     .icon-row {
         grid-template-columns: repeat(6, 1fr);
+    }
+
+    .icon-circle {
+        width: 200px;
+        height: 200px;
+        font-size: 100px;
+    }
+
+    .icon-circle p {
+        font-size: 30px;
     }
 
     .cta-section {
