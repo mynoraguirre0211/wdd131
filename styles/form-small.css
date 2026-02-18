@@ -78,6 +78,7 @@ select {
 }
 
 /* stars */
+
 .stars {
     display: flex;
     justify-content: center;
