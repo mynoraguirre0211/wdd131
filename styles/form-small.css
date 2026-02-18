@@ -71,20 +71,11 @@ input {
     font-family: var(--font-extra);
 }
 
-input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-}
-
 select {
     padding: 10px;
     width: 100%;
     max-width: 400px;
 }
-
-/* Classes */
-
 
 /* stars */
 .stars {
@@ -99,7 +90,7 @@ select {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1 1 60px;
+    margin: 10px;
 }
 
 .star-group label {
@@ -132,6 +123,12 @@ select {
 
 /* checkbox */
 
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
 .features div {
     display: flex;
     flex-direction: row;
@@ -142,17 +139,13 @@ select {
     flex-direction: row;
 }
 
-.features input[type="checkbox"] {
-    margin-right: .5em;
-}
-
 .optional-text {
     color: var(--third-color);
     font-weight: normal;
 }
 
-input[type="checkbox"] {
-    align-self: center;
+.feature-usage {
+    align-items: center;
 }
 
 .feature-usage label {
@@ -175,10 +168,6 @@ input[type="submit"] {
 textarea {
     display: block;
     padding: 10px;
-}
-
-.star-group {
-    margin: 10px;
 }
 
 /* ID´s */

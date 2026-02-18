@@ -26,17 +26,15 @@
     <main>
         <form method="get" action="review.html" autocomplete="off">
 
-            <!-- PRODUCT -->
             <fieldset>
                 <legend>Product Information</legend>
 
-                <label for="product">Select a Product</label>
+                <label for="product"></label>
                 <select name="product" id="product" required>
                     <option value="" disabled selected>Select a Product...</option>
                 </select>
             </fieldset>
 
-            <!-- STARS -->
             <fieldset class="stars">
                 <legend>Overall Rating</legend>
 
@@ -46,33 +44,31 @@
                 </div>
 
                 <div class="star-group">
-                    <input type="radio" id="star2" name="rating" value="2">
+                    <input type="radio" id="star2" name="rating" value="2" required>
                     <label for="star2">★★</label>
                 </div>
 
                 <div class="star-group">
-                    <input type="radio" id="star3" name="rating" value="3">
+                    <input type="radio" id="star3" name="rating" value="3" required>
                     <label for="star3">★★★</label>
                 </div>
 
                 <div class="star-group">
-                    <input type="radio" id="star4" name="rating" value="4">
+                    <input type="radio" id="star4" name="rating" value="4" required>
                     <label for="star4">★★★★</label>
                 </div>
 
                 <div class="star-group">
-                    <input type="radio" id="star5" name="rating" value="5">
+                    <input type="radio" id="star5" name="rating" value="5" required>
                     <label for="star5">★★★★★</label>
                 </div>
             </fieldset>
 
-            <!-- DATE -->
             <div>
                 <label for="dateinstall">Date of Installation</label>
                 <input type="date" id="dateinstall" name="dateinstall">
             </div>
 
-            <!-- FEATURES -->
             <fieldset class="features">
                 <legend>Which feature did you find useful in the product? (Check all that apply)</legend>
 
@@ -97,13 +93,11 @@
                 </div>
             </fieldset>
 
-            <!-- REVIEW -->
             <div>
                 <label for="review">Written Review <span class="optional-text">(Optional)</span></label>
                 <textarea id="review" name="review"></textarea>
             </div>
 
-            <!-- USER -->
             <div>
                 <label for="fname">User Name <span class="optional-text">(Optional)</span></label>
                 <input type="text" id="fname" name="fname">
@@ -121,111 +115,3 @@
 </body>
 
 </html>
-
-<!-- <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Form 1 WDD131</title>
-        <meta name="description" content="This is a form for WDD131 class where we learn more details about form.">
-        <meta name="author" content="Mynor Aguirre">
-        <link rel="stylesheet" href="styles/form-small.css">
-        <link rel="stylesheet" href="styles/form-large.css">
-        <script src="scripts/form.js" defer></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap"
-            rel="stylesheet">
-    </head>
-
-    <body>
-        <header>
-            <h1>Product Review</h1>
-        </header>
-        <main>
-            <form method="get" action="review.html" autocomplete="off">
-                <fieldset>
-                    <legend>Product Information</legend>
-
-                    <label for="product">Select a Product</label>
-                    <select name="product" id="product" required>
-                        <option value="" disabled selected>Select a Product...</option>
-                    </select>
-                </fieldset>
-
-                <fieldset class="stars">
-                    <legend>Overall Rating</legend>
-
-                    <div class="star-group">
-                        <input type="radio" id="star1" name="rating" value="1" required>
-                        <label for="star1">&star;</label>
-                    </div>
-
-                    <div class="star-group">
-                        <input type="radio" id="star2" name="rating" value="2" required>
-                        <label for="star2">&star;&star;</label>
-                    </div>
-
-                    <div class="star-group">
-                        <input type="radio" id="star3" name="rating" value="3" required>
-                        <label for="star3">&star;&star;&star;</label>
-                    </div>
-
-                    <div class="star-group">
-                        <input type="radio" id="star4" name="rating" value="4" required>
-                        <label for="star4">&star;&star;&star;&star;</label>
-                    </div>
-
-                    <div class="star-group">
-                        <input type="radio" id="star5" name="rating" value="5" required>
-                        <label for="star5">&star;&star;&star;&star;&star;</label>
-                    </div>
-                </fieldset>
-
-
-                <label for="dateinstall">Date of Installation</label>
-                <input type="date" id="dateinstall" name="dateinstall">
-
-                <fieldset class="features">
-                    <legend>Which feature did you find useful in the product? (Check all that apply)</legend>
-
-                    <label>
-                        <input type="checkbox" name="features" value="Durability">
-                        Durability
-                    </label>
-
-                    <label>
-                        <input type="checkbox" name="features" value="Easy to use">
-                        Easy to use
-                    </label>
-
-                    <label>
-                        <input type="checkbox" name="features" value="Performance">
-                        Performance
-                    </label>
-
-                    <label>
-                        <input type="checkbox" name="features" value="Design">
-                        Design
-                    </label>
-                </fieldset>
-
-                <label for="review">Written Review <span class="optional-text">(Optional)</span></label>
-                <textarea id="review" name="review"></textarea>
-
-                <label for="fname">User Name <span class="optional-text">(Optional)</span></label>
-                <input type="text" id="fname" name="fname">
-
-                <input type="submit" class="back-form" value="Send my review">
-            </form>
-        </main>
-        <footer>
-            <p> © <span id="currentyear"></span> 🎶 Mynor Aguirre 🎶 Guatemala, Guatemala</p>
-            <p id="lastModified" class="highlight"></p>
-        </footer>
-    </body>
-
-    </html>
